@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shenali Cosmetic Clinic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Gotham:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .logo-text {
+        font-family: "Gotham", sans-serif;
+      }
+      .accents {
+        background: #d5a64a;
+      }
+      .text-accents {
+        color: #d5a64a;
+      }
+      .gradient {
+        background: rgb(191, 134, 21);
+        background: linear-gradient(
+          180deg,
+          rgba(191, 134, 21, 1) 0%,
+          rgba(222, 176, 86, 1) 35%,
+          rgba(0, 212, 255, 0) 100%
+        );
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-50">
+    <!-- Header Section -->
+    <header class="bg-white shadow fixed top-0 w-full z-50">
+      <nav
+        class="container mx-auto flex items-center justify-between py-2 px-6"
+      >
+        <!-- Navigation Links (Left) -->
+        <ul class="hidden md:flex space-x-6 text-black font-semibold">
+          <li>
+            <a href="#choose" class="hover:text-gray-700">Why Choose Us</a>
+          </li>
+          <li><a href="#services" class="hover:text-gray-700">Services</a></li>
+        </ul>
+
+        <!-- Logo -->
+        <div class="flex-grow md:flex-grow-0 text-center">
+          <div class="w-24 h-24 mx-auto">
+            <img
+              src="/assets/shenali-logo.png"
+              alt="Shenali Logo"
+              class="object-contain w-full h-full"
+            />
+          </div>
+        </div>
+
+        <!-- Navigation Links (Right) -->
+        <ul class="hidden md:flex space-x-6 text-black font-semibold">
+          <li><a href="#contact" class="hover:text-gray-700">Contact</a></li>
+          <li><a href="#home" class="hover:text-gray-700">Home</a></li>
+        </ul>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <button
+          id="menu-toggle"
+          class="md:hidden block text-black focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden bg-white border-t border-gray-200 shadow-lg"
+      >
+        <ul class="flex flex-col items-center py-4 space-y-2">
+          <li>
+            <a href="#why-choose-us" class="block hover:text-gray-700"
+              >Why Choose Us</a
+            >
+          </li>
+          <li>
+            <a href="#services" class="block hover:text-gray-700">Services</a>
+          </li>
+          <li>
+            <a href="#contact" class="block hover:text-gray-700">Contact</a>
+          </li>
+          <li><a href="#home" class="block hover:text-gray-700">Home</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Content Sections -->
+    <main class="pt-20">
+      <section
+        id="home"
+        class="py-16 text-center bg-cover bg-center relative"
+        style="
+          background-image: url('./assets/1.jpg');
+          height: calc(100vh - 50px);
+        "
+      >
+        <!-- Dark overlay for better text visibility -->
+        <div class="absolute inset-0 bg-slate-50 opacity-50 z-0"></div>
+
+        <div class="absolute inset-0 flex items-center justify-center z-10">
+          <div class="text-center text-white p-6">
+            <div class="flex justify-center">
+              <img src="/assets/transparent.png" alt="" srcset="" />
+            </div>
+            <a
+              href="tel:+917738536658"
+              class="mt-6 px-5 py-2 md:px-6 md:py-3 text-lg animate-pulse accents text-white rounded hover:bg-yellow-700"
+            >
+              Book your free consultation Now
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="choose" class="text-gray-600 body-font border-b">
+        <div class="container px-5 py-12 mx-auto">
+          <div class="py-6 md:text-2xl text-xl logo-text text-black font-bold">
+            <h3>Why Choose Us?</h3>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <!-- Expert Care Card -->
+            <div class="p-4 md:w-1/3">
+              <div
+                class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="/assets/choose-1.png"
+                  alt="Expert Care"
+                />
+                <div class="p-6">
+                  <h1
+                    class="title-font logo-text text-lg font-bold text-gray-900 mb-3"
+                  >
+                    Expert Care
+                  </h1>
+                  <p class="leading-relaxed mb-3 text-gray-600">
+                    Certified specialists dedicated to your safety and
+                    satisfaction.
+                  </p>
+                  <div class="flex items-center flex-wrap">
+                    <a
+                      class="text-accents inline-flex items-center md:mb-2 lg:mb-0"
+                      >Learn More
+                      <svg
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Latest Technology Card -->
+            <div class="p-4 md:w-1/3">
+              <div
+                class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="/assets/choose-2.png"
+                  alt="Latest Technology"
+                />
+                <div class="p-6">
+                  <h1
+                    class="title-font logo-text text-lg font-bold text-gray-900 mb-3"
+                  >
+                    Latest Technology
+                  </h1>
+                  <p class="leading-relaxed mb-3 text-gray-600">
+                    Advanced equipment for effective and reliable treatments.
+                  </p>
+                  <div class="flex items-center flex-wrap">
+                    <a
+                      class="text-accents inline-flex items-center md:mb-2 lg:mb-0"
+                      >Learn More
+                      <svg
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Personalized Solutions Card -->
+            <div class="p-4 md:w-1/3">
+              <div
+                class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="/assets/choose-3.png"
+                  alt="Personalized Solutions"
+                />
+                <div class="p-6">
+                  <h1
+                    class="title-font logo-text text-lg font-bold text-gray-900 mb-3"
+                  >
+                    Personalized Solutions
+                  </h1>
+                  <p class="leading-relaxed mb-3 text-gray-600">
+                    Treatments designed around your beauty goals.
+                  </p>
+                  <div class="flex items-center flex-wrap">
+                    <a
+                      class="text-accents inline-flex items-center md:mb-2 lg:mb-0"
+                      >Learn More
+                      <svg
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-600 border-b body-font">
+        <div class="container px-5 py-12 mx-auto">
+          <div
+            class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto"
+          >
+            <h1
+              class="flex-grow sm:pr-16 text-base md:text-lg font-medium title-font text-gray-900"
+            >
+              At Shenali Cosmetic Clinic, we specialize in advanced aesthetic
+              treatments to enhance your natural beauty. Our goal is to provide
+              safe, non-invasive solutions tailored to your unique needs with
+              exceptional care.
+            </h1>
+            <a
+              href="tel:+917738536658"
+              class="flex-shrink-0 text-white animate-pulse accents border-0 py-2 px-8 focus:outline-none rounded text-base md:text-lg mt-10 sm:mt-0"
+            >
+              Book your free consultation Now
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="text-gray-600 body-font">
+        <div class="container px-5 py-12 mx-auto">
+          <div class="py-6 md:text-2xl text-xl logo-text text-black font-bold">
+            <h3>Our Services</h3>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <!-- Hair Restoration & Care -->
+            <div class="lg:w-1/4 md:w-1/2 p-6 md:p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Hair PRP Therapy"
+                  class="object-cover object-center w-full h-full block"
+                  src="/assets/prp.jpg"
+                />
+              </a>
+              <div class="mt-4">
+                <h3
+                  class="text-xs text-accents tracking-widest title-font mb-1"
+                >
+                  Hair Restoration & Care
+                </h3>
+                <h2
+                  class="text-gray-900 logo-text text-lg font-bold title-font text-lg"
+                >
+                  Hair PRP Therapy
+                </h2>
+                <p class="mt-1">
+                  Stimulate natural hair growth and improve hair health with
+                  Platelet-Rich Plasma (PRP) treatments.
+                </p>
+              </div>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/2 p-6 md:p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Hair GFC"
+                  class="object-cover object-center w-full h-full block"
+                  src="/assets/prp-2.jpg"
+                />
+              </a>
+              <div class="mt-4">
+                <h3
+                  class="text-accents text-xs tracking-widest title-font mb-1"
+                >
+                  Hair Restoration & Care
+                </h3>
+                <h2
+                  class="text-gray-900 logo-text title-font text-lg font-bold"
+                >
+                  Hair GFC (Growth Factor Concentrate)
+                </h2>
+                <p class="mt-1">
+                  Boost hair regrowth with advanced GFC therapy, designed for
+                  visible, long-lasting results.
+                </p>
+              </div>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/2 p-6 md:p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Hair Transplant"
+                  class="object-cover object-center w-full h-full block"
+                  src="/assets/transplant.jpg"
+                />
+              </a>
+              <div class="mt-4">
+                <h3
+                  class="text-accents text-xs tracking-widest title-font mb-1"
+                >
+                  Hair Restoration & Care
+                </h3>
+                <h2
+                  class="text-gray-900 logo-text text-lg title-font font-bold"
+                >
+                  Hair Transplant
+                </h2>
+                <p class="mt-1">
+                  Permanent hair restoration solutions performed by skilled
+                  professionals using the latest techniques.
+                </p>
+              </div>
+            </div>
+
+            <!-- Skin Treatments -->
+            <div class="lg:w-1/4 md:w-1/2 p-6 md:p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Skin PRP Therapy"
+                  class="object-cover object-center w-full h-full block"
+                  src="/assets/skin-prp.jpg"
+                />
+              </a>
+              <div class="mt-4">
+                <h3
+                  class="text-accents text-xs tracking-widest title-font mb-1"
+                >
+                  Skin Treatments
+                </h3>
+                <h2
+                  class="text-gray-900 logo-text title-font text-lg font-bold"
+                >
+                  Skin PRP Therapy
+                </h2>
+                <p class="mt-1">
+                  Rejuvenate your skin and stimulate collagen production for a
+                  youthful appearance.
+                </p>
+              </div>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/2 p-6 md:p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Hydrafacial"
+                  class="object-cover object-center w-full h-full block"
+                  src="/assets/hydra-facial.jpg"
+                />
+              </a>
+              <div class="mt-4">
+                <h3
+                  class="text-accents text-xs tracking-widest title-font mb-1"
+                >
+                  Skin Treatments
+                </h3>
+                <h2
+                  class="text-gray-900 logo-text title-font text-lg font-bold"
+                >
+                  Hydrafacial
+                </h2>
+                <p class="mt-1">
+                  Cleanse, exfoliate, and deeply hydrate your skin for a glowing
+                  complexion.
+                </p>
+              </div>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/2 p-6 md:p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="BB Glow Facial"
+                  class="object-cover object-center w-full h-full block"
+                  src="/assets/bb-glow.jpg"
+                />
+              </a>
+              <div class="mt-4">
+                <h3
+                  class="text-accents text-xs tracking-widest title-font mb-1"
+                >
+                  Skin Treatments
+                </h3>
+                <h2
+                  class="text-gray-900 logo-text title-font text-lg font-bold"
+                >
+                  BB Glow Facial
+                </h2>
+                <p class="mt-1">
+                  Achieve flawless, dewy skin while improving texture and tone.
+                </p>
+              </div>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/2 p-6 md:p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Skin Whitening Treatments"
+                  class="object-cover object-center w-full h-full block"
+                  src="/assets/skin-wigthening.jpg"
+                />
+              </a>
+              <div class="mt-4">
+                <h3
+                  class="text-accents text-xs tracking-widest title-font mb-1"
+                >
+                  Skin Treatments
+                </h3>
+                <h2
+                  class="text-gray-900 logo-text title-font text-lg font-bold"
+                >
+                  Skin Whitening Treatments
+                </h2>
+                <p class="mt-1">
+                  Brighten your complexion with specialized chemical peels and
+                  IV drips.
+                </p>
+              </div>
+            </div>
+
+            <!-- Advanced Laser Therapies -->
+            <div class="lg:w-1/4 md:w-1/2 p-6 md:p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Laser Hair Removal"
+                  class="object-cover object-center w-full h-full block"
+                  src="/assets/laser-hair.jpg"
+                />
+              </a>
+              <div class="mt-4">
+                <h3
+                  class="text-accents text-xs tracking-widest title-font mb-1"
+                >
+                  Advanced Laser Therapies
+                </h3>
+                <h2
+                  class="text-gray-900 logo-text title-font text-lg font-bold"
+                >
+                  Laser Hair Removal
+                </h2>
+                <p class="mt-1">
+                  Experience smooth, hair-free skin with our safe and effective
+                  laser technology.
+                </p>
+              </div>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/2 p-6 md:p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Laser Skin Resurfacing"
+                  class="object-cover object-center w-full h-full block"
+                  src="/assets/skin-resurfacing.jpg"
+                />
+              </a>
+              <div class="mt-4">
+                <h3
+                  class="text-accents text-xs tracking-widest title-font mb-1"
+                >
+                  Advanced Laser Therapies
+                </h3>
+                <h2
+                  class="text-gray-900 logo-text title-font text-lg font-bold"
+                >
+                  Laser Skin Resurfacing
+                </h2>
+                <p class="mt-1">
+                  Address pigmentation, scars, and uneven skin texture with
+                  precision laser treatments.
+                </p>
+              </div>
+            </div>
+
+            <!-- Injectables & Anti-Aging Solutions -->
+            <div class="lg:w-1/4 md:w-1/2 p-6 md:p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Botox & Fillers"
+                  class="object-cover object-center w-full h-full block"
+                  src="/assets/botox.jpg"
+                />
+              </a>
+              <div class="mt-4">
+                <h3
+                  class="text-accents text-xs tracking-widest title-font mb-1"
+                >
+                  Injectables & Anti-Aging Solutions
+                </h3>
+                <h2
+                  class="text-gray-900 logo-text title-font text-lg font-bold"
+                >
+                  Botox & Fillers
+                </h2>
+                <p class="mt-1">
+                  Reduce wrinkles and restore volume for a naturally youthful
+                  look.
+                </p>
+              </div>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/2 p-6 md:p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Face GFC Therapy"
+                  class="object-cover object-center w-full h-full block"
+                  src="/assets/skin-gfg.jpg"
+                />
+              </a>
+              <div class="mt-4">
+                <h3
+                  class="text-accents text-xs tracking-widest title-font mb-1"
+                >
+                  Injectables & Anti-Aging Solutions
+                </h3>
+                <h2
+                  class="text-gray-900 logo-text title-font text-lg font-bold"
+                >
+                  Face GFC Therapy
+                </h2>
+                <p class="mt-1">
+                  Enhance skin elasticity and radiance with advanced growth
+                  factor concentrate treatments.
+                </p>
+              </div>
+            </div>
+
+            <!-- Wellness & Weight Management -->
+            <div class="lg:w-1/4 md:w-1/2 p-6 md:p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="IV Drips"
+                  class="object-cover object-center w-full h-full block"
+                  src="/assets/iv-drip.avif"
+                />
+              </a>
+              <div class="mt-4">
+                <h3
+                  class="text-accents text-xs tracking-widest title-font mb-1"
+                >
+                  Wellness & Weight Management
+                </h3>
+                <h2
+                  class="text-gray-900 logo-text title-font text-lg font-bold"
+                >
+                  IV Drips
+                </h2>
+                <p class="mt-1">
+                  Rejuvenate your body with vitamin-infused IV drips designed to
+                  boost energy, hydrate, and improve overall wellness.
+                </p>
+              </div>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/2 p-6 md:p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Weight Loss Programs"
+                  class="object-cover object-center w-full h-full block"
+                  src="/assets/weightloss.jpg"
+                />
+              </a>
+              <div class="mt-4">
+                <h3
+                  class="text-accents text-xs tracking-widest title-font mb-1"
+                >
+                  Wellness & Weight Management
+                </h3>
+                <h2
+                  class="text-gray-900 logo-text title-font text-lg font-bold"
+                >
+                  Weight Loss Programs
+                </h2>
+                <p class="mt-1">
+                  Achieve your fitness goals with personalized plans and
+                  treatments tailored to your needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="text-gray-600 body-font mt-12 relative">
+        <div class="absolute inset-0 bg-gray-300">
+          <iframe
+            width="100%"
+            height="100%"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="map"
+            scrolling="no"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.181379383451!2d72.8141444!3d18.967595399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cfab07d5ee13%3A0xeee775d42aec4182!2sShenali%20Cosmetic%20Clinic!5e0!3m2!1sen!2sin!4v1735473016872!5m2!1sen!2sin"
+          ></iframe>
+        </div>
+        <div class="container px-5 py-24 mx-auto flex">
+          <div
+            class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md"
+          >
+            <div
+              class="py-6 md:text-2xl text-xl logo-text text-black font-bold"
+            >
+              <h3>Contact Us</h3>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-accents font-bold mb-1">Address:</h3>
+              <p class="text-gray-600 md:text-lg text-base">
+                Shop No 9, Shastri Hall, Savitri Shopping Center, Nanachowk,
+                Tardeo, Mumbai - 400007
+              </p>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-accents font-bold mb-1">Phone:</h3>
+              <a href="tel:+917738536658" class="md:text-lg text-base">
+                +91 77385 36658
+              </a>
+            </div>
+            <button
+              onclick="window.location.href='tel:+917738536658'"
+              class="text-white accents animate-pulse border-0 py-2 px-6 rounded text-base"
+            >
+              Book Free Consultation Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="text-white bg-zinc-950">
+        <div
+          class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+        >
+          <!-- Logo and Address Section -->
+          <a
+            class="flex title-font font-medium items-center md:justify-start justify-center"
+          >
+            <div class="hidden sm:block w-32 h-32">
+              <img
+                src="/assets/transparent.png"
+                alt="Shenali Cosmetic Clinic Logo"
+              />
+            </div>
+            <div class="flex flex-col sm:items-start items-center sm:ml-3">
+              <span
+                class="text-lg text-gray-200 font-bold text-center sm:text-left"
+              >
+                Shenali Cosmetic Clinic
+              </span>
+              <span
+                class="text-sm text-gray-200 mt-1 text-center sm:text-left max-w-xs"
+              >
+                Shop No 9, Shastri Hall, Savitri Shopping Center, Nanachowk,
+                Tardeo, Mumbai - 400007
+              </span>
+            </div>
+          </a>
+
+          <!-- Contact Section -->
+          <div
+            class="inline-flex sm:ml-auto sm:mt-0 justify-center sm:justify-start items-center text-center sm:text-left flex-col sm:flex-row"
+          >
+            <a
+              href="tel:+917738536658"
+              class="text-sm text-gray-200 font-semibold"
+              style="letter-spacing: 0.5px"
+            >
+              Contact- +91 77385 36658
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // Toggle mobile menu visibility
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
